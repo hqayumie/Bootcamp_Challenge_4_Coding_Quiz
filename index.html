@@ -1,40 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset='UTF-8' />
     <title> Coding Quiz</title>
-    <link rel="stylesheet" href="./assets/style.css" </head>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
 
 <body>
-    <Section class="card">
-        <header>Coding Quiz</header>
-        <div id="quiz-timer-container" style="text-align:right">
-            Time:
-            <span id="quiz-timer">0</span>
-            </div>
-        <div class="info-title"><span>Rules</span></div>
-        <div class="info-rules">
-            <p>Try to answer the following code-related questions within the time-limit.
-                Incorrect answers will penalize your time by 10 seconds.
-                You have 75 seconds to complete the quiz, good luck!</p>
-        </div>
-        <div class="start_btn"><button>Start Quiz</button></div>
-    </section>
-    
-
-    <div class="card" <h1>High Score</h1>
-        <form id="High-Score" method="POST">
-            <label for="Your-high-score">Add Your High Score</label>
-            <input type="text" name="Your-high-score" placeholder="Your Initials here" />
-        </form>
-        <p>High Scores: <span id="High-Score">0</span></p>
-        <ul id="score-list"></ul>
-        <button id="save">save</button>
-    </div>
+<section class="page1">
+    <header>Coding Quiz Challenge</header>
+    <p id="rules"> Try to complete the questions provided in the time limit!
+        Keep in mind that incorrect answers will penalize your time by 15 seconds!
+        You have 80 seconds to answer the questions, good luck!</p>
+    <button id="start-quiz">Start Quiz</button>
+</section>
+<p  class="timer" style="text-align:right;"></p>
+<div id="quiz"></div>
+<section id="score-form" style="text-align:center">
+    <h1> All Done!</h1>
+    <form method="POST">
+        <label for="your-score"> Your high Score</label>
+        <input type="text" name="your-score" placeholder="Your Initials here..."/>
+    </form>
+    <p>High scores:  <span id="high-score">0</span></p>
+    <ul id="score-list"></ul>
+    <button id="save">save</button>
+</section>
+<footer id="footer" style="text-align:center;"></footer>
     <script src="script.js"></script>
-
 </body>
 
 </html>
